@@ -3,6 +3,10 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <modules>
+        <module>shop-api-member-model</module>
+        <module>shop-api-weixin-model</module>
+    </modules>
 
     <parent>
         <artifactId>shop-parent</artifactId>
@@ -10,15 +14,9 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <!-- 分布式基础设施 -->
-    <artifactId>shop-basics</artifactId>
+    <artifactId>shop-api-model</artifactId>
+
     <packaging>pom</packaging>
-
-    <modules>
-        <module>shop-basics-springcloud-eureka</module>
-        <module>shop-basics-springcloud-zuul</module>
-    </modules>
-
 
 
 </project>

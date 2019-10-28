@@ -5,20 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>shop-parent</artifactId>
+        <artifactId>shop-api-model</artifactId>
         <groupId>cn.llyong.shop</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <!-- 分布式基础设施 -->
-    <artifactId>shop-basics</artifactId>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>shop-basics-springcloud-eureka</module>
-        <module>shop-basics-springcloud-zuul</module>
-    </modules>
-
+    <artifactId>shop-api-member-model</artifactId>
 
 
 </project>
