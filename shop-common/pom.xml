@@ -10,6 +10,10 @@
     </parent>
 
     <artifactId>shop-common</artifactId>
+    <packaging>pom</packaging>
 
+    <modules>
+        <module>shop-common-core</module>
+    </modules>
 
 </project>

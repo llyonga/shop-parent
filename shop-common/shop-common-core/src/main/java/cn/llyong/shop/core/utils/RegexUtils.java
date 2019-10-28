@@ -3,6 +3,8 @@ package cn.llyong.shop.core.utils;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static java.util.regex.Pattern.compile;
+
 /**
  * @description: 正则表达式工具类
  * @author: llyong
@@ -165,7 +167,7 @@ public class RegexUtils {
 	 * @return
 	 */
 	public static String getDomain(String url) {
-		Pattern p = Pattern.compile("(?<=http://|\\.)[^.]*?\\.(com|cn|net|org|biz|info|cc|tv)",
+		Pattern p = compile("(?<=http://|\\.)[^.]*?\\.(com|cn|net|org|biz|info|cc|tv)",
 				Pattern.CASE_INSENSITIVE);
 		/**
 		 * 获取完整的域名
