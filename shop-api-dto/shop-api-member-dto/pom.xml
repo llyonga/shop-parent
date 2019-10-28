@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <artifactId>shop-api-model</artifactId>
+        <artifactId>shop-api-dto</artifactId>
         <groupId>cn.llyong.shop</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>shop-api-member-model</artifactId>
+    <artifactId>shop-api-member-dto</artifactId>
 
 
 </project>
