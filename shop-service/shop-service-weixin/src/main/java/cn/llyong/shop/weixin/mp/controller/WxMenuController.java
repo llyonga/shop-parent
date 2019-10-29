@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
-import com.mayikt.weixin.mp.config.WxMpConfiguration;
+import cn.llyong.shop.weixin.mp.config.WxMpConfiguration;
 
 import me.chanjar.weixin.common.api.WxConsts;
 import me.chanjar.weixin.common.api.WxConsts.MenuButtonType;

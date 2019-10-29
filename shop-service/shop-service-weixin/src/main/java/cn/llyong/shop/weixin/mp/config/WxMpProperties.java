@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
-import com.mayikt.weixin.mp.utils.JsonUtils;
+import cn.llyong.shop.weixin.mp.utils.JsonUtils;
 
 import lombok.Data;
 

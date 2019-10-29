@@ -10,16 +10,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import com.google.common.collect.Maps;
-import com.mayikt.weixin.mp.handler.KfSessionHandler;
-import com.mayikt.weixin.mp.handler.LocationHandler;
-import com.mayikt.weixin.mp.handler.LogHandler;
-import com.mayikt.weixin.mp.handler.MenuHandler;
-import com.mayikt.weixin.mp.handler.MsgHandler;
-import com.mayikt.weixin.mp.handler.NullHandler;
-import com.mayikt.weixin.mp.handler.ScanHandler;
-import com.mayikt.weixin.mp.handler.StoreCheckNotifyHandler;
-import com.mayikt.weixin.mp.handler.SubscribeHandler;
-import com.mayikt.weixin.mp.handler.UnsubscribeHandler;
+import cn.llyong.shop.weixin.mp.handler.KfSessionHandler;
+import cn.llyong.shop.weixin.mp.handler.LocationHandler;
+import cn.llyong.shop.weixin.mp.handler.LogHandler;
+import cn.llyong.shop.weixin.mp.handler.MenuHandler;
+import cn.llyong.shop.weixin.mp.handler.MsgHandler;
+import cn.llyong.shop.weixin.mp.handler.NullHandler;
+import cn.llyong.shop.weixin.mp.handler.ScanHandler;
+import cn.llyong.shop.weixin.mp.handler.StoreCheckNotifyHandler;
+import cn.llyong.shop.weixin.mp.handler.SubscribeHandler;
+import cn.llyong.shop.weixin.mp.handler.UnsubscribeHandler;
 
 import me.chanjar.weixin.common.api.WxConsts.EventType;
 import me.chanjar.weixin.common.api.WxConsts.MenuButtonType;

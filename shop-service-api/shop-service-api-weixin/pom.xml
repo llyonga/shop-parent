@@ -14,5 +14,13 @@
 
     <!--  微信服务  -->
 
+    <dependencies>
+        <dependency>
+            <groupId>cn.llyong.shop</groupId>
+            <artifactId>shop-api-weixin-dto</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
 
 </project>

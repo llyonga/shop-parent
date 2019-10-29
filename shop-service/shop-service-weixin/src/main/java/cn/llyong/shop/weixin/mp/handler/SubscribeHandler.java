@@ -4,7 +4,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Component;
 
-import com.mayikt.weixin.mp.builder.TextBuilder;
+import cn.llyong.shop.weixin.mp.handler.TextBuilder;
 
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.common.session.WxSessionManager;

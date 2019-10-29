@@ -11,13 +11,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-import com.mayikt.base.BaseResponse;
-import com.mayikt.constants.Constants;
-import com.mayikt.core.utils.RedisUtil;
-import com.mayikt.core.utils.RegexUtils;
-import com.mayikt.member.output.dto.UserOutDTO;
-import com.mayikt.weixin.feign.MemberServiceFeign;
-import com.mayikt.weixin.mp.builder.TextBuilder;
+import cn.llyong.shop.base.BaseResponse;
+import cn.llyong.shop.constants.Constants;
+import cn.llyong.shop.core.utils.RedisUtil;
+import cn.llyong.shop.core.utils.RegexUtils;
+import cn.llyong.shop.member.output.dto.UserOutDTO;
+import cn.llyong.shop.weixin.feign.MemberServiceFeign;
+import cn.llyong.shop.weixin.mp.builder.TextBuilder;
 import com.netflix.discovery.converters.Auto;
 
 import java.util.Map;
@@ -28,11 +28,15 @@ import java.util.Map;
 @Component
 @SuppressWarnings("static-access")
 public class MsgHandler extends AbstractHandler {
-	// 用户发送手机验证码提示
-	@Value("${mayikt.weixin.registration.code.message}")
+	/**
+	 *  用户发送手机验证码提示
+	 */
+	@Value("${shop.weixin.registration.code.message}")
 	private String registrationCodeMessage;
-	// 默认用户发送验证码提示
-	@Value("${mayikt.weixin.default.registration.code.message}")
+	/**
+	 *  默认用户发送验证码提示
+	 */
+	@Value("${shop.weixin.default.registration.code.message}")
 	private String defaultRegistrationCodeMessage;
 
 	@Autowired
@@ -83,7 +87,10 @@ public class MsgHandler extends AbstractHandler {
 
 	}
 
-	// 获取注册码
+	/**
+	 * 获取注册码
+	 * @return
+	 */
 	private int registCode() {
 		int registCode = (int) (Math.random() * 9000 + 1000);
 		return registCode;
