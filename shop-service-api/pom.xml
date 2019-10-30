@@ -20,7 +20,11 @@
     </modules>
 
     <dependencies>
-
+        <dependency>
+            <artifactId>shop-common-core</artifactId>
+            <groupId>cn.llyong.shop</groupId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
     </dependencies>
 
 
