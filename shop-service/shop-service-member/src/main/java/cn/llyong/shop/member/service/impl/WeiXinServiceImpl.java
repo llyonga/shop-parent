@@ -1,7 +1,7 @@
-package cn.llyong.shop.service.impl;
+package cn.llyong.shop.member.service.impl;
 
 import cn.llyong.shop.entity.AppEntity;
-import cn.llyong.shop.service.WeiXinService;
+import cn.llyong.shop.member.service.WeiXinService;
 import org.springframework.web.bind.annotation.RestController;
 
 /**

@@ -1,6 +1,6 @@
-package cn.llyong.shop.feign;
+package cn.llyong.shop.member.feign;
 
-import cn.llyong.shop.service.WeiXinService;
+import cn.llyong.shop.member.service.WeiXinService;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

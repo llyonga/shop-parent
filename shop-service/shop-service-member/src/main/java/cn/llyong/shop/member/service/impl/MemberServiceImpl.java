@@ -1,8 +1,8 @@
-package cn.llyong.shop.service.impl;
+package cn.llyong.shop.member.service.impl;
 
 import cn.llyong.shop.entity.AppEntity;
-import cn.llyong.shop.feign.WeixinFeign;
-import cn.llyong.shop.service.MemberService;
+import cn.llyong.shop.member.feign.WeixinFeign;
+import cn.llyong.shop.member.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
