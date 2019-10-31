@@ -7,14 +7,13 @@ import cn.llyong.shop.core.bean.MappingBeanUtils;
 import cn.llyong.shop.core.token.GenerateToken;
 import cn.llyong.shop.core.type.TypeCastHelper;
 import cn.llyong.shop.core.utils.MD5Util;
-import cn.llyong.shop.entity.AppEntity;
 import cn.llyong.shop.member.MemberService;
+import cn.llyong.shop.member.in.dto.UserLoginInDTO;
 import cn.llyong.shop.member.mapper.UserMapper;
 import cn.llyong.shop.member.mapper.entity.UserDo;
 import cn.llyong.shop.member.out.dto.UserOutDTO;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -74,7 +73,7 @@ public class MemberServiceImpl extends BaseApiService<UserOutDTO> implements Mem
     // token 如何防止伪造 真正其实很难防御伪造 尽量实现在安全体系 xss 只能在一些某些业务模块上加上必须验证本人操作
 
     @Override
-    public BaseResponse<UserOutDTO> ssoLogin(@RequestBody UserLoginInpDTO userLoginInpDTO) {
+    public BaseResponse<UserOutDTO> ssoLogin(@RequestBody UserLoginInDTO userLoginInpDTO) {
         // 1.验证参数
         String mobile = userLoginInpDTO.getMobile();
         if (StringUtils.isEmpty(mobile)) {
