@@ -14,7 +14,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @time: 23:21
  * @version: 1.0
  */
-@EnableApolloConfig
+//@EnableApolloConfig
 @EnableSwagger2Doc
 @EnableFeignClients
 @EnableEurekaClient

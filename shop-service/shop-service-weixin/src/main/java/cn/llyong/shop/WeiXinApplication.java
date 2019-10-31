@@ -13,7 +13,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  * @time: 23:20
  * @version: 1.0
  */
-@EnableApolloConfig
+//@EnableApolloConfig
 @EnableSwagger2Doc
 @EnableEurekaClient
 @SpringBootApplication

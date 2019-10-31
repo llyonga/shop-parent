@@ -2,9 +2,9 @@ package cn.llyong.shop.weixin.mp.handler;
 
 import java.util.Map;
 
+import cn.llyong.shop.weixin.mp.builder.TextBuilder;
 import org.springframework.stereotype.Component;
 
-import cn.llyong.shop.weixin.mp.handler.TextBuilder;
 
 import me.chanjar.weixin.common.error.WxErrorException;
 import me.chanjar.weixin.common.session.WxSessionManager;
